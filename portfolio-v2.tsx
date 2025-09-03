@@ -517,7 +517,7 @@ Preencha o formulário e entrarei em contato com você o mais breve possível.  
 
                   <div className="md:col-span-3 p-8">
                     <form action="https://formspree.io/f/mblaplzq" method="POST" className="space-y-6">
-                      <div className="grid grid-cols-2 gap-6">
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                           <label
                             htmlFor="name"
