@@ -67,7 +67,7 @@ export default function PortfolioV2() {
   ]
 
   const skills = [
-    { category: "Frontend", items: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "TypeScript"] },
+    { category: "Front-end", items: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "TypeScript"] },
     { category: "Backend", items: ["Node.js", "Express", "MongoDB", "SQL","Dart" , "CMake"] },
     { category: "Ferramentas", items: ["Git", "GitHub", "VS Code", "Figma", "Responsive Design"] },
   ]
@@ -284,7 +284,7 @@ export default function PortfolioV2() {
               </Badge>
               <h2 className="text-3xl font-bold mb-4">Conheça-me Melhor</h2>
               <p className="text-gray-600 dark:text-gray-300">
-               Sou um desenvolvedor web júnior apaixonado por aprender novas tecnologias e por criar soluções criativas. Busco unir design e funcionalidade para entregar experiências de usuário únicas e de alto nível.
+              Sou desenvolvedor web júnior, em constante aprendizado de novas tecnologias e criação de soluções criativas. Busco unir design e funcionalidade para entregar experiências digitais práticas e de qualidade.
               </p>
             </div>
 
@@ -292,10 +292,10 @@ export default function PortfolioV2() {
               <div>
                 <h3 className="text-2xl font-semibold mb-4">Minha historia</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-6">
-Atuo como desenvolvedor web júnior, sempre em busca de conhecimento e evolução. Meu foco é criar projetos que aliem usabilidade e design, oferecendo experiências digitais que realmente façam a diferença para o usuário.
+                Atuando em desenvolvimento web, deposito meu foco em projetos que combinam usabilidade e design para gerar experiências relevantes.
                 </p>
                 <p className="text-gray-600 dark:text-gray-300 mb-6">
-Atualmente, estou focado em desenvolvimento front-end com React, mas também tenho experiência com Node.js e bancos de dados. Adoro resolver problemas e colaborar em equipes multidisciplinares.
+                Hoje, me concentro no front-end com React, mas também tenho experiência com Node.js e bancos de dados. Tenho facilidade em resolver problemas e colaborar em equipes multidisciplinares.
                 </p>
 
                 <div className="grid grid-cols-2 gap-4 mt-8">
