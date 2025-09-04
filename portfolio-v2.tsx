@@ -68,7 +68,7 @@ export default function PortfolioV2() {
 
   const skills = [
     { category: "Front-end", items: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "TypeScript"] },
-    { category: "Backend", items: ["Node.js", "Express", "MongoDB", "SQL","Dart" , "CMake"] },
+    { category: "Back-end", items: ["Node.js", "Express", "MongoDB", "SQL","Dart" , "CMake"] },
     { category: "Ferramentas", items: ["Git", "GitHub", "VS Code", "Figma", "Responsive Design"] },
   ]
 
@@ -113,7 +113,7 @@ export default function PortfolioV2() {
       description: "Aprendendo princípios e técnicas científicas para o desenvolvimento, operação e manutenção de software de alta qualidade, focando em confiabilidade, eficiência e escalabilidade.",
     },
     {
-      period: "Em curso",
+      period: "A Fazer",
       title: "Ciência da Computação",
       institution: "Università del Piemonte Orientale",
       description: "Estudos voltados para computadores, os seus sistemas e a criação de soluções para resolver problemas complexos através da tecnologia, envolvendo programação, algoritmos, inteligência artificial, segurança de dados, redes e sistemas de gestão de informação.",
@@ -282,7 +282,7 @@ export default function PortfolioV2() {
               <Badge className="mb-4 bg-teal-500/10 text-teal-500 dark:bg-teal-400/10 dark:text-teal-400">
                 Sobre mim
               </Badge>
-              <h2 className="text-3xl font-bold mb-4">Conheça-me Melhor</h2>
+              <h2 className="text-3xl font-bold mb-4">Conheça-me melhor</h2>
               <p className="text-gray-600 dark:text-gray-300">
               Sou desenvolvedor web júnior, em constante aprendizado de novas tecnologias e criação de soluções criativas. Busco unir design e funcionalidade para entregar experiências digitais práticas e de qualidade.
               </p>
@@ -469,122 +469,117 @@ export default function PortfolioV2() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-20">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto text-center mb-16">
-              <Badge className="mb-4 bg-teal-500/10 text-teal-500 dark:bg-teal-400/10 dark:text-teal-400">
-                Contacto
-              </Badge>
-              <h2 className="text-3xl font-bold mb-4">Entre em Contato</h2>
-              <p className="text-gray-600 dark:text-gray-300">
-                Interessado em trabalhar conosco ou tem alguma dúvida?
-              </p>
+<section id="contact" className="py-20">
+  <div className="container mx-auto px-4">
+    <div className="max-w-3xl mx-auto text-center mb-16">
+      <Badge className="mb-4 bg-teal-500/10 text-teal-500 dark:bg-teal-400/10 dark:text-teal-400">
+        Contacto
+      </Badge>
+      <h2 className="text-3xl font-bold mb-4">Entre em Contato</h2>
+      <p className="text-gray-600 dark:text-gray-300">
+        Interessado em trabalhar conosco ou tem alguma dúvida?
+      </p>
+    </div>
+
+    <div className="max-w-5xl mx-auto">
+      <Card className="bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 overflow-hidden">
+        {/* Adicionado flex-col para dispositivos móveis */}
+        <div className="flex flex-col md:grid md:grid-cols-5">
+          {/* Adicionado 'relative' para conter o ícone do código */}
+          <div className="md:col-span-2 relative bg-gradient-to-br from-teal-500 to-indigo-500 p-8 text-white">
+            <h3 className="text-2xl font-semibold mb-6">Informações de contato</h3>
+            <p className="mb-8 opacity-90">
+              Preencha o formulário e entrarei em contato com você o mais breve possível.
+            </p>
+
+            <div className="space-y-6">
+              {/* Email agora é um link clicável */}
+              <a href="mailto:MarcelinoJonathas@gmail.com" className="flex items-center gap-4 hover:underline">
+                <div className="p-2 rounded-full bg-white/20">
+                  <Mail size={20} />
+                </div>
+                <span>MarcelinoJonathas@gmail.com</span>
+              </a>
+              {/* GitHub agora é um link clicável */}
+              <a href="https://github.com/DevMarcelino" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 hover:underline">
+                <div className="p-2 rounded-full bg-white/20">
+                  <Github size={20} />
+                </div>
+                <span>github.com/DevMarcelino</span>
+              </a>
+              {/* LinkedIn agora é um link clicável */}
+              <a href="https://www.linkedin.com/in/jonathas-marcelino-oliveira" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 hover:underline">
+                <div className="p-2 rounded-full bg-white/20">
+                  <Linkedin size={20} />
+                </div>
+                <span>linkedin.com/in/jonathas-marcelino-oliveira</span>
+              </a>
             </div>
 
-            <div className="max-w-5xl mx-auto">
-              <Card className="bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 overflow-hidden">
-                <div className="grid md:grid-cols-5">
-                  <div className="md:col-span-2 bg-gradient-to-br from-teal-500 to-indigo-500 p-8 text-white">
-                    <h3 className="text-2xl font-semibold mb-6">Informações de contato</h3>
-                    <p className="mb-8 opacity-90">
-Preencha o formulário e entrarei em contato com você o mais breve possível.                    </p>
-
-                    <div className="space-y-6">
-                      <div className="flex items-center gap-4">
-                        <div className="p-2 rounded-full bg-white/20">
-                          <Mail size={20} />
-                        </div>
-                        <span>MarcelinoJonathas@gmail..com</span>
-                      </div>
-                      <div className="flex items-center gap-4">
-                        <div className="p-2 rounded-full bg-white/20">
-                          <Github size={20} />
-                        </div>
-                        <span>github.com/DevMarcelino</span>
-                      </div>
-                      <div className="flex items-center gap-4">
-                        <div className="p-2 rounded-full bg-white/20">
-                          <Linkedin size={20} />
-                        </div>
-                        <span>https://www.linkedin.com/in/jonathas-marcelino-oliveira</span>
-                      </div>
-                    </div>
-
-                    <div className="absolute bottom-8 left-8 right-8 opacity-10 my-0 p-11 py-0 px-0">
-                      <Code className="py-0 px-0 my-0 mx-0" size={180} />
-                    </div>
-                  </div>
-
-                  <div className="md:col-span-3 p-8">
-                    <form action="https://formspree.io/f/mblaplzq" method="POST" className="space-y-6">
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                          <label
-                            htmlFor="name"
-                            className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300"
-                          >
-                            Nome
-                          </label>
-                          <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:focus:ring-teal-400"
-                          />
-                        </div>
-                        <div>
-                          <label
-                            htmlFor="email"
-                            className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300"
-                          >
-                            Email
-                          </label>
-                          <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:focus:ring-teal-400"
-                          />
-                        </div>
-                      </div>
-                      <div>
-                        <label
-                          htmlFor="subject"
-                          className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300"
-                        >
-                          Assunto
-                        </label>
-                        <input
-                          type="text"
-                          id="subject"
-                          name="subject"
-                          className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:focus:ring-teal-400"
-                        />
-                      </div>
-                      <div>
-                        <label
-                          htmlFor="message"
-                          className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300"
-                        >
-                          Mensagem
-                        </label>
-                        <textarea
-                          id="message"
-                          name="message"
-                          rows={5}
-                          className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:focus:ring-teal-400"
-                        />
-                      </div>
-                      <Button type="submit" className="w-full bg-gradient-to-r from-teal-500 to-indigo-500 hover:from-teal-600 hover:to-indigo-600 text-white border-0">
-                        Enviar
-                      </Button>
-                    </form>
-                  </div>
-                </div>
-              </Card>
+            {/* Ícone de código mantido exatamente como você o tinha */}
+            <div className="absolute bottom-8 left-8 right-8 opacity-10 my-0 p-11 py-0 px-0">
+              <Code className="py-0 px-0 my-0 mx-0" size={180} />
             </div>
           </div>
-        </section>
+
+          <div className="md:col-span-3 p-8">
+            <form action="https://formspree.io/f/mblaplzq" method="POST" className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">
+                    Nome
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:focus:ring-teal-400"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:focus:ring-teal-400"
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="subject" className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">
+                  Assunto
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:focus:ring-teal-400"
+                />
+              </div>
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium mb-2 text-gray-700 dark:text-gray-300">
+                  Mensagem
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={5}
+                  className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:focus:ring-teal-400"
+                />
+              </div>
+              <Button type="submit" className="w-full bg-gradient-to-r from-teal-500 to-indigo-500 hover:from-teal-600 hover:to-indigo-600 text-white border-0">
+                Enviar
+              </Button>
+            </form>
+          </div>
+        </div>
+      </Card>
+    </div>
+  </div>
+</section>
       </main>
 
       {/* Footer */}
