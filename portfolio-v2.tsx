@@ -59,7 +59,7 @@ export default function PortfolioV2() {
   }, [])
 
   const navItems = [
-    { id: "home", label: "Inicio", icon: <Code size={18} /> },
+    { id: "home", label: "Início", icon: <Code size={18} /> },
     { id: "about", label: "Sobre mim", icon: <User size={18} /> },
     { id: "projects", label: "Projetos", icon: <Briefcase size={18} /> },
     { id: "education", label: "Educação", icon: <GraduationCap size={18} /> },
@@ -75,7 +75,7 @@ export default function PortfolioV2() {
   const projects = [
     {
       title: "NutriHelper",
-      description: "Aplicativo de nutrição com foco em auxiliar a alimentação de atletas de auto rendimento.",
+      description: "Aplicativo de nutrição com foco em auxiliar a alimentação de atletas de alto rendimento.",
       technologies: ["Dart", "C++", "CMake"],
       image: "/nutrihelper.png?height=200&width=350",
       github: "https://github.com/DevMarcelino/NutriHelper",
@@ -91,7 +91,7 @@ export default function PortfolioV2() {
     },
     {
       title: "AthenaConnect",
-      description: "Exemplo de plataforma para network e divulgaçao de eventos internacionais com IA implementada.",
+      description: "Exemplo de plataforma para network e divulgação de eventos internacionais com IA implementada.",
       technologies: ["TypeScript", "API REST", "CSS", "JavaScript"],
       image: "/athe.png?height=200&width=350",
       github: "https://github.com/DevMarcelino/AthenaConnect",
@@ -102,7 +102,7 @@ export default function PortfolioV2() {
   const education = [
     {
       period: "2022 - 2024",
-      title: "Ensino Medio integrado com Tecnico em Desenvolvimento de Sistemas",
+      title: "Ensino Médio integrado com Técnico em Desenvolvimento de Sistemas",
       institution: "Etec Raposo Tavares",
       description: "Estudos focados em desenvolvimento web, programação e design de interfaces.",
     },
@@ -217,13 +217,13 @@ export default function PortfolioV2() {
                   Desenvolvedor Web Junior
                 </Badge>
                 <h1 className="text-4xl md:text-6xl font-bold mb-4">
-                  Ola, sou{" "}
+                Olá, sou{" "}
                   <span className="bg-gradient-to-r from-teal-500 to-indigo-500 bg-clip-text text-transparent">
                     Jonathas
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                  Desenvolvedor FullStack apaixonado por criar experiências web envolventes e funcionais.
+                  Desenvolvedor FullStack comprometido em criar experiências web envolventes e funcionais.
                 </p>
                 <div className="flex flex-wrap gap-4">
 <a href="#projects">
@@ -265,7 +265,7 @@ export default function PortfolioV2() {
                   <div className="w-64 h-64 md:w-80 md:h-80 rounded-full border-2 border-gray-200 dark:border-gray-800 overflow-hidden relative z-10">
                     <img
                       src="/jm.jpeg?height=400&width=400"
-                      alt="Tu foto"
+                      alt="Jonathas Marcelino"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -290,7 +290,7 @@ export default function PortfolioV2() {
 
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 className="text-2xl font-semibold mb-4">Minha historia</h3>
+                <h3 className="text-2xl font-semibold mb-4">Minha história</h3>
                 <p className="text-gray-600 dark:text-gray-300 mb-6">
                 Atuando em desenvolvimento web, deposito meu foco em projetos que combinam usabilidade e design para gerar experiências relevantes.
                 </p>
@@ -473,7 +473,7 @@ export default function PortfolioV2() {
   <div className="container mx-auto px-4">
     <div className="max-w-3xl mx-auto text-center mb-16">
       <Badge className="mb-4 bg-teal-500/10 text-teal-500 dark:bg-teal-400/10 dark:text-teal-400">
-        Contacto
+        Contato
       </Badge>
       <h2 className="text-3xl font-bold mb-4">Entre em Contato</h2>
       <p className="text-gray-600 dark:text-gray-300">
