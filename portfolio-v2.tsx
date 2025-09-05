@@ -69,7 +69,7 @@ export default function PortfolioV2() {
   const skills = [
     { category: "Front-end", items: ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "TypeScript"] },
     { category: "Back-end", items: ["Node.js", "Express", "MongoDB", "SQL","Dart" , "CMake"] },
-    { category: "Ferramentas", items: ["Git", "GitHub", "VS Code", "Figma", "Responsive Design"] },
+    { category: "Ferramentas", items: ["Git", "GitHub", "VS Code", "Figma", "Android Studio" , "Jest"] },
   ]
 
   const projects = [
@@ -482,45 +482,46 @@ export default function PortfolioV2() {
     </div>
 
     <div className="max-w-5xl mx-auto">
-      <Card className="bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 overflow-hidden">
-        {/* Adicionado flex-col para dispositivos móveis */}
-        <div className="flex flex-col md:grid md:grid-cols-5">
-          {/* Adicionado 'relative' para conter o ícone do código */}
-          <div className="md:col-span-2 relative bg-gradient-to-br from-teal-500 to-indigo-500 p-8 text-white">
-            <h3 className="text-2xl font-semibold mb-6">Informações de contato</h3>
-            <p className="mb-8 opacity-90">
-              Preencha o formulário e entrarei em contato com você o mais breve possível.
-            </p>
+  <Card className="bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 overflow-hidden">
+    <div className="flex flex-col md:grid md:grid-cols-5">
+      {/* Contêiner de informações de contato, agora com o gradiente */}
+      <div className="md:col-span-2 relative bg-gradient-to-br from-teal-500 to-indigo-500 p-8 text-white">
+        
+        <h3 className="text-2xl font-semibold mb-6">Informações de contato</h3>
+        <p className="mb-8 opacity-90">
+          Preencha o formulário e entrarei em contato com você o mais breve possível.
+        </p>
 
-            <div className="space-y-6">
-              {/* Email agora é um link clicável */}
-              <a href="mailto:MarcelinoJonathas@gmail.com" className="flex items-center gap-4 hover:underline">
-                <div className="p-2 rounded-full bg-white/20">
-                  <Mail size={20} />
-                </div>
-                <span>MarcelinoJonathas@gmail.com</span>
-              </a>
-              {/* GitHub agora é um link clicável */}
-              <a href="https://github.com/DevMarcelino" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 hover:underline">
-                <div className="p-2 rounded-full bg-white/20">
-                  <Github size={20} />
-                </div>
-                <span>github.com/DevMarcelino</span>
-              </a>
-              {/* LinkedIn agora é um link clicável */}
-              <a href="https://www.linkedin.com/in/jonathas-marcelino-oliveira" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 hover:underline">
-                <div className="p-2 rounded-full bg-white/20">
-                  <Linkedin size={20} />
-                </div>
-                <span>linkedin.com/in/jonathas-marcelino-oliveira</span>
-              </a>
+        {/* Links de contato, colocados acima do ícone com z-index */}
+        {/* Adicionei 'relative z-10' para garantir que os links fiquem na frente */}
+        <div className="space-y-6 relative z-10">
+          <a href="mailto:MarcelinoJonathas@gmail.com" className="flex items-center gap-4 hover:underline">
+            <div className="p-2 rounded-full bg-white/20">
+              <Mail size={20} />
             </div>
+            <span>MarcelinoJonathas@gmail.com</span>
+          </a>
+          <a href="https://github.com/DevMarcelino" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 hover:underline">
+            <div className="p-2 rounded-full bg-white/20">
+              <Github size={20} />
+            </div>
+            <span>github.com/DevMarcelino</span>
+          </a>
+          <a href="https://www.linkedin.com/in/jonathas-marcelino-oliveira" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 hover:underline">
+            <div className="p-2 rounded-full bg-white/20">
+              <Linkedin size={20} />
+            </div>
+            <span>linkedin.com/in/jonathas-marcelino-oliveira</span>
+          </a>
+        </div>
 
-            {/* Ícone de código mantido exatamente como você o tinha */}
-            <div className="absolute bottom-8 left-8 right-8 opacity-10 my-0 p-11 py-0 px-0">
-              <Code className="py-0 px-0 my-0 mx-0" size={180} />
-            </div>
-          </div>
+        {/* O ícone de código, posicionado no fundo com z-index menor */}
+        {/* Ajustei o posicionamento para se adequar ao seu layout */}
+        <div className="absolute bottom-4 right-4 opacity-10 z-0">
+  <Code size={180} />
+</div>
+
+      </div>
 
           <div className="md:col-span-3 p-8">
             <form action="https://formspree.io/f/mblaplzq" method="POST" className="space-y-6">
