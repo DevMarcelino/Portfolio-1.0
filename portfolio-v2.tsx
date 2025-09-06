@@ -300,8 +300,8 @@ export default function PortfolioV2() {
 
                 <div className="grid grid-cols-2 gap-4 mt-8">
                   <div className="p-4 rounded-lg bg-white dark:bg-gray-800 shadow-sm">
-                    <div className="text-3xl font-bold text-teal-500 dark:text-teal-400 mb-1">2+</div>
-                    <div className="text-gray-600 dark:text-gray-300">Anos de experiencia</div>
+                    <div className="text-3xl font-bold text-teal-500 dark:text-teal-400 mb-1">+6</div>
+                    <div className="text-gray-600 dark:text-gray-300">Meses de experiencia</div>
                   </div>
                   <div className="p-4 rounded-lg bg-white dark:bg-gray-800 shadow-sm">
                     <div className="text-3xl font-bold text-indigo-500 dark:text-indigo-400 mb-1">10+</div>
